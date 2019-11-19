@@ -6,7 +6,7 @@ import {ADD_TODO, DELETE_TODO, SELECT_ALL_TODOS, DELETE_COMPLETE_TODOS} from './
 export default {
 
   addTodo ({commit}, todo) {
-    // 提交一个comutation请求
+    // 提交一个mutation请求
     commit(ADD_TODO, {todo}) // 传递给mutation的是一个包含数据的对象
   },
 

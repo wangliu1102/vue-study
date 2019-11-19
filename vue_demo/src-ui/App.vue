@@ -1,5 +1,5 @@
 <template>
-  <mt-button @click="handleClick" type="primary" style="width: 100%">Test</mt-button>
+  <mt-button @click.native="handleClick" type="primary" style="width: 100%">Test</mt-button>
 </template>
 
 <script>

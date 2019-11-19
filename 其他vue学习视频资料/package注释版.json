@@ -1,0 +1,50 @@
+{
+  "name": "vue-04-cli-demo1", // 项目名称 
+  "version": "0.1.0",	// 版本号
+  "private": true,		// 是否私人项目
+  "scripts": {
+    "serve": "vue-cli-service serve",  // npm run serve 开发环境
+    "build": "vue-cli-service build",  // npm run build 生产环境，会在项目根目录下创建 dist 目录，存放项目压缩文件
+    "lint": "vue-cli-service lint"	 // 
+  },
+  "dependencies": {  //项目相关模块依赖
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {  //这里的依赖是用于开发环境的，不发布到生产环境。
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-plugin-eslint": "^3.6.0",
+    "@vue/cli-service": "^3.6.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": { // eslint配置
+    "root": true, // 用来告诉eslint找当前配置文件不能往父级查找
+    "env": {	 // 指定你想启用的环境，下面的配置指定为node环境
+      "node": true
+    },
+    "extends": [ 
+      "plugin:vue/essential", //格式化代码插件
+      "eslint:recommended" // 启用推荐规则
+    ],
+    "rules": { //新增自定义规则
+      "semi":[2,'never'], // 禁止用分号
+	  "indent": [2, 2] // 缩进采用4个空格
+	},  
+    "parserOptions": {
+      "parser": "babel-eslint" //用来指定eslint解析器的，解析es6
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {} // 自动补全CSS前缀, CSS样式在不同浏览器下有兼容性问题, 
+    }
+  },
+  "browserslist": [ // 生成的代码支持哪些版本的浏览器， browserl.ist 网站查看选择了哪些浏览器 > 1%, last 2 versions, not ie <= 8
+    "> 1%",	// 全球超1%的人使用的浏览器
+    "last 2 versions", // 这些浏览器的最后两个版本
+    "not ie <= 8"	// 排除IE8及以下版本浏览器
+  ]
+}

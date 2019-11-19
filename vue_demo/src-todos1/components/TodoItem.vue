@@ -51,7 +51,7 @@
   li {
     list-style: none;
     height: 36px;
-    line-height: 36px;
+    /*line-height: 36px;*/
     padding: 0 5px;
     border-bottom: 1px solid #ddd;
   }
