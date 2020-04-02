@@ -69,7 +69,7 @@
 
 ### 1.2.1. 效果 (01_HelloWorld/test.html)
 
-![img](/72416368-f5f4-460f-9585-2cc3163a8aa1/128/index_files/01_HelloWorld.gif.gif)
+![img](72416368-f5f4-460f-9585-2cc3163a8aa1/128/index_files/01_HelloWorld.gif.gif)
 
 **1.2.2. 编码**
 
